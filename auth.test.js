@@ -15,5 +15,4 @@ test('Открытие страницы "Вход в личный кабинет
     await expect(page).toHaveTitle('Вход в личный кабинет');
     await page.getByRole('textbox', { name: "Электронная почта или телефон" }).fill('maks-nazarov-99@mail.ru');
     await page.getByRole('button', { name: "Продолжить" }).click();
-    await page.getByRole('button', { name: "Подтвердить" }).click();
 });
